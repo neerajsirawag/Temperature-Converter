@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Nunito+Sans:opsz@6..12&family=Open+Sans:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    /* background: #071952; */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 500px;
+    background: black;
+    border-radius: 40px;
+    box-shadow: 0px 0px 20px 5px #000000b6;
+    font-family: 'Comfortaa', cursive;
+    padding: 20px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 10px;
+}
+
+.Temperature-icon{
+    font-size: 45px;
+    color: crimson;
+}
+
+h1{
+    color: white;
+    letter-spacing: 1.2px;
+    font-size: 30px;
+}
+
+#celsius, #fahrenheit, #kelvin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+input{
+    flex: 5;
+    height: 60px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    border: none;
+    outline: none;
+    border-radius: 8px 0 0 8px;
+    padding: 0 10px;
+    box-shadow: inset 0px 0px 20px 1px #ffffff70;
+}
+
+
+/* for chrome, safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+/* for Mozila firefox */
+input{
+    -moz-appearance: textfield;
+    background: rgba(128, 128, 128, 0.286);
+    font-family: 'Comfortaa', cursive;
+    border-radius: 30px 2px 2px 30px;
+    color: white;
+    border: 2px inset rgba(255, 255, 255, 0.529);
+}
+
+
+.icon{
+    flex: 1;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 5px;
+    text-align: center;
+    font-size: 30px;
+    background: rgba(156, 156, 156, 0.991);
+    color: #000000b0;
+    border-radius: 0 8px 8px 0;
+    box-shadow: inset 0px 0px 20px 1px #ffffff70;
+}
+
+
+.button{
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+.button button{
+    border: none;
+    outline: none;
+    border: 2px solid black;
+    color: red;
+    background: rgba(109, 109, 109, 0.535);
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Comfortaa', cursive;
+    box-shadow: inset 0px 0px 20px 1px #00000070;
+}
+
+.button button:hover{
+    background: grey;
+    color: black;
+    /* border: 2px dotted rgba(0, 255, 170, 0.799); */
+}
+
+.detail{
+    padding: 60px;
+    font-size: 25px;
+    font-family: 'Comfortaa', cursive;
+}
+
+.detail span a{
+    text-decoration: none;
+    color: crimson;
+    font-weight: bolder;
+}
+.detail span{
+    color: crimson;
+}
